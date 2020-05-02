@@ -25,7 +25,7 @@ class Operations:
 
 
 class BaseConfig:
-    ALBUMY_ADMIN_EMAIL = os.getenv('ALBUMY_ADMIN', 'admin@helloflask.com')
+    ALBUMY_ADMIN_EMAIL = os.getenv('ALBUMY_ADMIN', 'henanfire@163.com')
     ALBUMY_PHOTO_PER_PAGE = 12
     ALBUMY_COMMENT_PER_PAGE = 15
     ALBUMY_NOTIFICATION_PER_PAGE = 20
@@ -55,11 +55,11 @@ class BaseConfig:
     AVATARS_SIZE_TUPLE = (30, 100, 200)
 
     MAIL_SERVER = os.getenv('MAIL_SERVER')
-    MAIL_PORT = 465
-    MAIL_USE_SSL = True
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
     MAIL_USERNAME = os.getenv('MAIL_USERNAME')
     MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
-    MAIL_DEFAULT_SENDER = ('Albumy Admin', MAIL_USERNAME)
+    MAIL_DEFAULT_SENDER = ('Admin', MAIL_USERNAME)
 
     DROPZONE_ALLOWED_FILE_TYPE = 'image'
     DROPZONE_MAX_FILE_SIZE = 3

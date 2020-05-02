@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block head %}
-        <title>{% block title %}{% endblock %} - Albumy</title>
+        <title>{% block title %}{% endblock %} -瞬间</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         {% block styles %}
             <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
@@ -78,8 +78,8 @@
                         </div>
                     </div>
                 {% else %}
-                    <a class="btn btn-outline-primary" href="{{ url_for('auth.login') }}">Login</a>&nbsp;&nbsp;
-                    <a class="btn btn-primary" href="{{ url_for('auth.register') }}">Join Albumy</a>
+                    <a class="btn btn-outline-primary" href="{{ url_for('auth.login') }}">登录</a>&nbsp;&nbsp;
+                    <a class="btn btn-primary" href="{{ url_for('auth.register') }}">注册</a>
                 {% endif %}
                 </div>
             </div>
@@ -98,15 +98,9 @@
         {% block content %}{% endblock %}
         {% block footer %}
             <footer>
-                <p class="float-left">
-                    <small>&copy; 2018
-                        <a href="http://greyli.com" title="Written by Grey Li">Grey Li</a> -
-                        <a href="https://github.com/greyli/albumy" title="Fork me on GitHub">GitHub</a> -
-                        <a href="http://helloflask.com" title="A HelloFlask project">HelloFlask</a>
-                    </small>
-                </p>
+                
                 <p class="float-right">
-                    <small>Capture and share every wonderful moment.</small>
+                    <small>记录你的美好瞬间！！！</small>
                 </p>
             </footer>
         {% endblock %}
